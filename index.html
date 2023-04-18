@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = 'utf-8'/>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+    <title> MOKEPÓN!!!</title>
+    <script src="scripts/mokepon.js"></script>
+</head>
+<body>
+    <h1>🌱 💧 🔥MOKEPON 🔥 💧 🌱 </h1>
+    
+        <section id="general_box">
+            <h2>Elige tu mascota:</h2>
+            <div id="card_container">
+                <div class="select_card">
+                    
+                    <label for="Hipodoge">Hipodoge</label>                   
+                    <img src="images/hipodoge.jpg">
+                    <br>
+                    <input type="radio" name="mascota" id="Hipodoge" value="1"></input>
+                </div>
+                
+                <div class="select_card">
+                    <label for="Capipepo" name="mascota">Capipepo</label>
+                    <img src="images/capipepo.jpg">
+                    <br>
+                    <input type="radio" name="mascota" id="Capipepo" value="2"></input>
+                </div>
+                
+                <div class="select_card">
+                    <label for="Ratihueya">Ratihueya</label>
+                    <img src="images/ratihueya.jpg">
+                    <br>
+                    <input type="radio" name="mascota" id="Ratihueya" value="3"></input>
+                </div>
+                
+                <div class="select_card">
+                    <label for="Langostelvis">Langostelvis</label>
+                    <img src="images/langostelvis.jpg">
+                    <br>
+                    <input type="radio" name="mascota" id="Langostelvis" value="4"></input>
+                </div>
+
+                <div class="select_card">
+                    <label for="Tucapalma">Tucapalma</label>
+                    <img src="images/tucapalma.jpg">
+                    <br>
+                    <input type="radio" name="mascota" id="Tucapalma" value="5"></input>
+                </div>
+                
+                <div class="select_card">
+                    <label for="Pydos">Pydos</label>
+                    <img src="images/pydos.jpg">
+                    <br>
+                    <input type="radio" name="mascota" id="Pydos" value="6"></input>
+                </div>
+            </div>
+                <button class="boton" id="seleccionarMascota">Elegir</button>
+                <button class="boton" id="resetear" disabled>Resetear</button>
+            
+        </section>
+        <section id="seleccionar_ataque">
+            <div id="interfaces_container">
+                <div class="interfaz"> Tu mascota tiene <span id="vidasJugador"> 3 </span> vidas.</div>
+                <div class="interfaz"> La mascota del enemigo tiene <span id="vidasEnemigo"> 3 </span> vidas.</div>
+            </div>
+            
+            <h2>Elige tu ataque:</h2>
+            <div id="btnsAtaque">
+                <button id="btnFuego" class="boton"> Fuego 🔥</button>
+                <button id="btnAgua" class="boton"> Agua 💧</button>
+                <button id="btnTierra" class="boton"> Tierra 🌱</button>
+            </div>
+        </section>
+
+        <section id="mensajes">
+            <p><span id ="mascota_jugador"></span><span id="tipo_ataque_jugador"></span>.</p>
+            <p><span id="mascota_enemigo"></span><span id="tipo_ataque_adversario"></span>.</p>
+        
+        </section>
+
+</body>
+
+</html>
